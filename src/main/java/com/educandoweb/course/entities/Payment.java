@@ -21,6 +21,7 @@ public class Payment implements Serializable {
     private Long id;
     private Instant moment;
 
+    @JsonIgnore
     @OneToOne
     @MapsId
     private Order order;
